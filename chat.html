@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel=" shortcut icon" href="icon/favicon.ico"> -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Frands">
+    <title>Chat CodeTalk - CodeTalk</title>
+</head>
+<body id="chat-screen">
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>15:17</span>
+        </div>
+        <div class="status-bar__column">
+            <span>7%</span>
+            <i class="fas fa-battery-quarter fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+    
+    <header class="alt-header">
+        <div class="alt-header__column">
+            <a href="chats.html"><i class="fas fa-angle-left fa-2x"></i></a>
+        </div>
+        <div class="alt-header__column">
+            <span class="alt-header__title">CodeTalk</span>
+        </div>
+        <div class="alt-header__column">
+            <span><i class="fas fa-search fa-lg"></i></span>
+            <span><i class="fas fa-bars fa-lg"></i></span>
+        </div>
+    </header>
+
+    <main class="main-screen main-chat">
+        <div class="chat__timestamp">
+            Tuseday, June 30, 2020
+        </div>
+        <div class="msg-row">
+            <img src="img/code.png">
+            <div class="msg-row__content">
+                <span class="msg__author">CodeTalk</span>
+                <div class="msg__info">
+                    <span class="msg__bubble__left">Cheack Thanks ~</span>
+                    <span class="msg__time">15:12</span>
+                </div>
+            </div>
+        </div>
+        <div class="msg-row msg-row--own">
+            <div class="msg-row__content">
+                <div class="msg__info">
+                    <span class="msg__bubble__right">Ok Thanks</span>
+                    <span class="msg__time">15:12</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <form class="reply" action="chat.html" method="GET">
+    <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+    </div>
+    <div class="reply__column">
+            <input type="text" placeholder="Wrtie a messag">
+            <i class="far fa-smile"></i>
+            <button>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+        </div>
+    </form>
+    <div class="no-mobile">
+        <span>Your screen is to big or mobile</span>
+    </div>
+    <script src="https://kit.fontawesome.com/c5e4369a85.js" crossorigin="anonymous"></script>
+</body>
+</html>

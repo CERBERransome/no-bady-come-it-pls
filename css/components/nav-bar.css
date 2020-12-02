@@ -1,0 +1,78 @@
+@keyframes upanddown{
+    0%{
+        transform: translateY(1px);
+    }
+    10%{
+        transform: translateY(3px);
+    }
+    20%{
+        transform: translateY(6px);
+    }
+}
+
+.nav__ul{
+    display:flex;
+    justify-content: space-between;
+}
+.nav{
+    background-color: #f9f9fa;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    border-top:1px solid rgba(0,0,0,0.1);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.nav__notification{
+    position: absolute;
+    left: 17px;
+    bottom:15px;
+    animation:upanddown 1s ease-in-out infinite;
+}
+.nav__li{
+    position: relative;
+}
+.nav__a:visited{
+    color:rgb(78, 76, 76);
+}
+.nav__reddot{
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: white;
+    position: absolute;
+    left: 33px;
+    bottom:28px;
+    background-color:tomato;
+}
+
+@keyframes apperBtnAni{
+    from{
+        opacity: 0;
+    }
+    to{
+        transform: none;
+        opacity: 1;
+    }
+}
+
+.nav__li{
+    transform: translateY(50px);
+    opacity: 0;
+    animation: apperBtnAni 0.5s ease-in-out forwards;
+}
+.nav__li:nth-child(2){
+    animation-delay: 0.2s;
+}
+.nav__li:nth-child(3){
+    animation-delay: 0.5s;
+}
+
+.nav__li:last-child{
+    animation-delay: 0.8s;
+}
